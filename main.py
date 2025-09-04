@@ -1,4 +1,6 @@
 import os
+import platform
+import subprocess
 import sys
 from ai_dev_agent_helpers import (
     build_prompt_and_get_messages,
@@ -26,11 +28,14 @@ while True:
         break
 
     elif user_input == "new":
-        print("📂 Starting a new file review...")
-        os.execv(sys.executable, [sys.executable] + sys.argv)
+        # Todo: Need to improve the functionality below tp enhance the user experience
+        print("📂 If on windows, relaunching ai dev agent in a new Command Prompt window, if not exiting...")
+        if platform.system() == "Windows":
+            subprocess.Popen([
+                "cmd.exe", "/c", "start", "cmd.exe", "/k", f"python {os.path.abspath(__file__)}"
+            ])
         break
-
+    
     messages.append({"role": "user", "content": user_input})
 
     user_response = perform_ai_model_request(MODEL, MODEL_API_URL, messages, file_path, language, verbose)
-
