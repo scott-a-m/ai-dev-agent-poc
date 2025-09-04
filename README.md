@@ -1,6 +1,8 @@
 # 🧠 AI Dev Agent
 
-A lightweight, AI dev agent for reviewing and refactoring source code using local LLMs via [Ollama](https://ollama.com). This CLI-based assistant reads your code, detects bugs and performance issues, proposes fixes, and optionally overwrites the original file—all while maintaining conversational context and streaming responses in real time.
+A lightweight, AI dev agent for reviewing and refactoring source code using local LLMs via [Ollama](https://ollama.com). This CLI-based assistant reads your code, detects bugs and performance issues, proposes fixes, and optionally overwrites the original file. It offers user-driven refinement and multiturn logic until the code meets your requirements.
+
+Please note that this is not production ready and is a proof of concept.
 
 ---
 
