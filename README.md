@@ -8,13 +8,13 @@ A lightweight, AI dev agent for reviewing and refactoring source code using loca
 
 ## 🚀 Features
 
-- ✅ Multi-language support (Python, JavaScript, C++, Java, etc.)
-- ✅ Streaming LLM responses for real-time feedback
-- ✅ File backup and overwrite with user confirmation
-- ✅ Multiturn conversation loop for iterative refinement
-- ✅ Environment interaction: reads, edits, and backs up files
-- ✅ Model-agnostic architecture (supports Mistral, Deepseek, etc.)
-- ✅ Verbose mode for HTTP diagnostics and payload inspection
+- Multi-language support (Python, JavaScript, C++, Java, etc.)
+- Streaming LLM responses for real-time feedback
+- File backup and overwrite with user confirmation
+- Multiturn conversation loop for iterative refinement
+- Environment interaction: reads, edits, and backs up files
+- Model-agnostic architecture (supports Mistral, Deepseek, etc.)
+- Verbose mode for HTTP diagnostics and payload inspection
 
 ---
 
@@ -45,7 +45,7 @@ git clone https://github.com/YOUR_USERNAME/codechecker-agent.git
 cd dev-ai-agent
 ```
 
-## 🧠 Local Development
+## 🛠️ Local Development
 Set up a Python virtual environment and install dependencies:
 
 ```python
