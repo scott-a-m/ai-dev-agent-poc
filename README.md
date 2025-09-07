@@ -51,7 +51,7 @@ Set up a Python virtual environment and install dependencies:
 ```python
 #Create and activate virtual environment
 py -m venv .venv
-venv\Scripts\activate
+venv\Scripts\Activate
 pip install requests
 
 ## Run agent
